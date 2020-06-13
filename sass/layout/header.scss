@@ -1,0 +1,39 @@
+.header {
+	/* configuro o tamanho do header */
+	height: 95vh;
+	/* configuro a imagem */
+	background-image:
+		/*!primeiro eu tenho a direção do verde utilizando rgba e hexadecimal*/
+		linear-gradient(
+        to right bottom,
+        rgba($color-primary-light,.8),
+        rgba($color-primary-dark,.8))
+		/*!depois eu especifico a imagem de fundo */
+		,url(../img/hero.jpg);
+	background-size: cover;
+	background-position: top;
+
+	/*!primeiro xy é a primeira parte*/
+	clip-path: polygon(0 0,100% 0,100% 75VH, 0 100%);
+	/*!pq relativo pelo simples fato da log-box herdar as caracteristicas de seu elemento pai*/
+    position: relative; 
+    
+
+    &__logo-box{
+        position: absolute;
+	    top: 4rem;
+	    left: 4rem;
+    }
+
+    &__logo{
+        height: 3.5rem;
+    }
+
+    &__text-box{
+        position: absolute;
+        top:40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+}	

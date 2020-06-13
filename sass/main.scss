@@ -1,0 +1,118 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+
+@import "layout/header";
+
+@import "pages/home";
+
+@import "layout/grid";
+
+
+/*!
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+
+
+
+/* o header é o cabeçalho do site é a parte com a imagem com o verde de fundo */
+
+/*!por ser de fato absoluto o logo box pode ser mover em qualquer lugar delimitado pelo elemento pai*/
+
+
+/* a logo do site */
+            //  .header__logo-box{
+            // 	    position: absolute;
+            // 	    top: 4rem;
+            // 	    left: 4rem;
+
+            //  }
+            // .header__logo{
+            // 	height: 3.5rem;
+            // }
+/* termina configuração da logo */
+
+/* configuração do texto do header */
+// .header__text-box{
+// 	position: absolute;
+// 	top:40%;
+// 	left: 50%;
+// 	transform: translate(-50%,-50%);
+// 	text-align: center;
+// }
+
+
+
+
+
+/* finalizo a configuração do texto do header */
+
+
+
+/* aqui fica as animações usando keyframes */
+
+/* fim animações */
+
+
+/* especificar melhor */
+
+
+
+/* mouse em cima do link */
+// .btn:hover{
+// 	transform: translateY(-3px);
+// 	box-shadow: 0 1rem 2rem rgba($color-black,.2);
+// }
+
+/* apertei o botão */
+// .btn:active{
+// 	transform: translateY(1px);
+// 	/*!ao ativar o botão a sombra deve ser metade de quando o usuario coloca o mouse sobre o elemento*/
+// 	box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
+// }
+
+// .btn--white {
+// 	background-color: $color-white;
+// 	color:$color-grey-dark;
+
+// }
+
+/* botão antes ou seja é o botão imaginário toda vez que tiver after é um botão imaginário*/
+// .btn::after{
+// 	content:"";
+// 	display: inline-block;
+// 	height: 100%;
+// 	width: 100%;
+// 	border-radius: 10rem;
+// 	position: absolute;
+// 	top:0;
+// 	left: 0;
+// 	z-index: -1;
+// 	transition: all 1s;
+// }
+
+// .btn--white::after{
+// 	background-color: $color-white;
+// }
+
+// .btn:hover::after{
+// 	transform: scaleY(1.4) scaleX(1.6);
+// 	opacity: 0;
+// }
+// .btn--animated{
+// 	animation: moveInBottom .5s ease-out .75s;
+// 	animation-fill-mode: backwards;
+// }
