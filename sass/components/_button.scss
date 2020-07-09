@@ -1,5 +1,5 @@
 .btn{
-    &:link, &:visited{
+    &,&:link, &:visited{
         text-transform: uppercase;
         text-decoration: none;
         /*!15 px para o top e 40 para o bottom*/
@@ -11,12 +11,15 @@
         /*!fizemos isso para que o botão imaginario ficasse atras do botao real que é esse colocamos a posição do imaginario absoluta e a do real relativa*/
         position: relative;
         font-size: $default-font-size;
+        border: none;
+        cursor: pointer;
         
         &:hover{
             transform: translateY(-3px);
             box-shadow: 0 1rem 2rem rgba($color-black,.2);
         }
-        &:active{
+        &:active,&:focus{
+            outline: none;
             transform: translateY(1px);
             /*!ao ativar o botão a sombra deve ser metade de quando o usuario coloca o mouse sobre o elemento*/
             box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
